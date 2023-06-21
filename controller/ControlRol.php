@@ -18,6 +18,9 @@ switch ($accion) {
     case "Eliminar":
         Eliminar($daoRol);
         break;
+    case "GenerarPDF":
+        GenerarPDF();
+        break;
 }
 
 function Listar($daoRol)
@@ -80,4 +83,10 @@ function Eliminar($daoRol)
     }
 
     header("Location: ControlRol.php?accion=Listar");
+}
+
+function GenerarPDF()
+{
+
+    header("Location: ../Report/ReporteRol.php");
 }

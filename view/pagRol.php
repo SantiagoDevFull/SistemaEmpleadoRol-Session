@@ -22,6 +22,8 @@
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAgregar">
             <i class="fa-solid fa-folder-plus fa-xl"></i> Nuevo Rol
         </button>
+
+        <a target="_blank" href="../controller/ControlRol.php?accion=GenerarPDF" class="btn btn-danger"><i class="fa-solid fa-file-pdf fa-xl"></i> Generar reporte</a>
         <br><br>
 
         <table id="tabla" class="table table-striped text-center" style="width:100%">

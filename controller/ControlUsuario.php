@@ -28,6 +28,9 @@ switch ($accion) {
     case "Eliminar":
         Eliminar($daoUsuario);
         break;
+    case "GenerarPDF":
+        GenerarPDF();
+        break;
 }
 
 function Login($daoUsuario)
@@ -72,7 +75,7 @@ function Listar($daoUsuario, $daoRol)
     $listarUsuarios = $daoUsuario->ListarUsuario();
     $listarRoles = $daoRol->ListarRol();
     $id = $daoUsuario->RetornarCodigoUsuario();
-    include '../view/pagUsuario.php';
+    require_once '../view/pagUsuario.php';
 }
 
 function Agregar($daoUsuario)
@@ -155,4 +158,9 @@ function Eliminar($daoUsuario)
     }
 
     header("Location: ControlUsuario.php?accion=Listar");
+}
+
+function GenerarPDF()
+{
+    header("Location: ../Report/ReporteUsuario.php");
 }

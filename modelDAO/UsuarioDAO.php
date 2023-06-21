@@ -1,6 +1,7 @@
 <?php
 require_once '../interfaces/Iusuario.php';
 require_once '../model/Usuario.php';
+require_once '../model/Rol.php';
 require_once '../config/MySQLConexion.php';
 
 class UsuarioDAO implements Iusuario
