@@ -59,19 +59,20 @@ function Login($daoUsuario)
         header("Location: ../view/pagSoporte.php");
     } else {
         $_SESSION['mensaje'] = "Correo y/o contraseña incorrecto";
-        header("Location: ../index.php");
+        header("Location: ../view/pagLogin.php");
     }
 }
 
 function CerrarSesion($daoUsuario)
 {
-
+    session_start();
     session_destroy();
-    header("Location: ../index.php");
+    header("Location: ../view/pagLogin.php");
 }
 
 function Listar($daoUsuario, $daoRol)
 {
+
     $listarUsuarios = $daoUsuario->ListarUsuario();
     $listarRoles = $daoRol->ListarRol();
     $id = $daoUsuario->RetornarCodigoUsuario();

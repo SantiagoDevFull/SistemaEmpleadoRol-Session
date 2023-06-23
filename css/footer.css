@@ -1,0 +1,19 @@
+.redes{
+    font-size: 300%;
+}
+
+.redes {
+    animation: saltar 1s infinite;
+  }
+
+   @keyframes saltar {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

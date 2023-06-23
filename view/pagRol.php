@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <?php include '../include/recursosCSS.php' ?>
+    <?php require_once '../include/recursosCSS.php' ?>
 </head>
 
 <body>
-    <?php include '../include/recursosJS.php' ?>
+    <?php require_once '../include/recursosJS.php' ?>
     <script src="../js/rol.js"></script>
-    <?php include '../include/navegacion.php' ?>
+    <?php require_once '../include/navegacionSoporte.php' ?>
 
     <div class="container-fluid">
         <br>
